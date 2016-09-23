@@ -12,7 +12,7 @@ Adds much needed snippets to quickly build Jinja html templates and Flask python
 ## Snippets
 ### All snippets start with the letter f
 
-#### Jinja:
+#### [Jinja Templates]( http://jinja.pocoo.org/docs/dev/templates/):
 * fexp
 * ffilter
 * ffb
