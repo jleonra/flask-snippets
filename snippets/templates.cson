@@ -1,0 +1,31 @@
+# Python Flask snippets for templating as per: http://jinja.pocoo.org/docs/dev/templates/
+# All snippents have the 'f' prefix
+# '.source.python':
+  # 'ML docstring':
+  #   'prefix': '"""'
+  #   'body': """\\"\\"\\"${1:sumary_line}
+  #
+  #     Keyword arguments:
+  #     ${2:argument} -- ${3:description}
+  #     Return: ${4:return_description}
+  #     \\"\\"\\"$5
+  #     """
+  #   'leftLable': 'Docstring'
+  #   'description': 'Multi-line docstring'
+
+'.text.html':
+    'Flask Variable':
+      'prefix': 'fvar'
+      'body': '\{\{ ${1:foo.bar} \}\}'
+
+    'Flask Filter':
+      'prefix': 'ffilter'
+      'body': '\{\{ ${1:foo.bar}|${2:filter} \}\}'
+
+    'Flask Comment':
+      'prefix': 'fcomment'
+      'body': '\{# ${1:comment} #\}'
+
+    'Flask Raw':
+      'prefix': 'fraw'
+      'body': '\{% raw %\}\n\t${1:blockofcode}\n\{% endraw %\}'
