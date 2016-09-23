@@ -1,0 +1,23 @@
+{
+  "name": "flask-snippets",
+  "main": "./lib/flask-snippets",
+  "autor": {
+    "name": "Juan Leon"
+  },
+  "version": "0.1.1",
+  "description": "A collection of snippets for Python Flask Microframework.",
+  "keywords": [
+    "snippets",
+    "python",
+    "flask",
+    "jinja"
+  ],
+  "repository": "https://github.com/jleonra/flask-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.2.0 <2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/jleonra/flask-snippets/issues"
+  }
+}

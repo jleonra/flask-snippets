@@ -1,0 +1,26 @@
+'.source.python':
+    'Flask App':
+        'prefix': 'fapp'
+        'body': """from flask import Flask
+                app = Flask(__name__)
+
+                @app.route('${1:path}')
+                def ${2:func_name}(${3:param}):
+                    return ${4:expression}
+
+                if __name__ == '__main__':
+                  app.run(${5:debug=True})$0 """
+
+    'ML docstring':
+        'prefix': '"""'
+        'body': """\\"\\"\\"${1:sumary_line}
+
+                Keyword arguments:
+                ${2:argument} -- ${3:description}
+                Return: ${4:return_description}
+                \\"\\"\\"$5
+                """
+
+    'SL docstring':
+        'prefix': '""'
+        'body': '"""${1:sumary_line}"""$2'
