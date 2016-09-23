@@ -10,15 +10,15 @@
         "snippet",
         "python",
         "flask",
-        "templates"
+        "templates",
+        "jinja"
     ],
     "repository": "https://github.com/jleonra/flask-snippets",
     "license": "MIT",
     "engines": {
-        "atom": ">=0.174.0 <2.0.0"
+        "atom": ">=0.2.0 <2.0.0"
     },
     "bugs": {
         "url": "https://github.com/jleonra/flask-snippets/issues"
-    },
-    "dependencies": {}
+    }
 }
