@@ -1,4 +1,4 @@
-## 1.1.1 - Bug Fixing
+## 0.2.0 - Flask control snippets
 * Better README.md
 * Cleaned templates.cson
 * Created controls.cson

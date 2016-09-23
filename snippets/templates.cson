@@ -84,3 +84,7 @@
     'Flask Autoescape':
         'prefix': 'fautoescape'
         'body': '{% autoescape ${1:true} %}\n\t\t${2:blockofcode}\n{% endautoescape %}$3'
+
+    'Flask url':
+        'prefix': 'furl'
+        'body': '{{ url_for("${1:template}") }}$2'
