@@ -34,7 +34,9 @@ Adds much needed snippets to quickly build Jinja html templates and Flask python
 * fimport
 * fwith
 * fautoescape
-* * *
+
+***
+
 #### [Flask](http://flask.pocoo.org/docs/0.11/quickstart/):
 * "" (single line docstring)
 * """ (milti-line docstring)
