@@ -8,10 +8,8 @@
   "description": "A collection of snippets for Python Flask Microframework.",
   "keywords": [
     "snippets",
-    "snippet",
     "python",
     "flask",
-    "templates",
     "jinja"
   ],
   "repository": "https://github.com/jleonra/flask-snippets",

@@ -1,6 +1,9 @@
 # flask-snippets
 
-Adds much needed snippets to quickly build Jinja html templates and Flask py controls.
+Adds much needed snippets to quickly build Jinja html templates and Flask python controls.
+
+## To install:
+> apm install flask-snippets
 
 ## Work in progress
 
