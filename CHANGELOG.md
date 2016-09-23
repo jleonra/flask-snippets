@@ -1,6 +1,8 @@
-## 0.1.2 - Formating
+## 1.1.1 - Bug Fixing
 * Better README.md
 * Cleaned templates.cson
+* Created controls.cson
+
 
 ## 0.1.1 - Tweaks
 * Minor fixes on README.md
