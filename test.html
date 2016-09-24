@@ -2,10 +2,10 @@
     blockofcode
 {% endfilter %}
 
-{% import "template" as alias %}
-
-{{ self.block_name() }}
-
-{% set expression %}  {{ self.supper() }} {% autoescape true %}
+{% if expression %}
     blockofcode
-{% endautoescape %}
+{% elif expression2 %}
+    blockofcode
+{% else %}
+    blockofcode
+{% endif %}

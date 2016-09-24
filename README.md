@@ -55,8 +55,7 @@ Adds snippets to quickly build Jinja html templates and Flask python controls in
 * flog
 
 ## TODO:
-- Add syntax highlighting
-- Add more snippets for more specific cases (flashing, )
+- Add more snippets for more specific cases (flashing, etc.)
 - Add pics of the package working
 - Add description to snippet's name in the readme file.
 - Review snippets for optimization

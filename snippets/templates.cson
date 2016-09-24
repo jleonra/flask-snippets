@@ -59,7 +59,7 @@
 
     'Flask Filter Block':
         'prefix': 'ffb'
-        'body': '{% filter ${1:filter} %}\n\t\t${2:blockofcode}\n{% endfilter %}$3'
+        'body': '{% filter ${1:foo} %}\n\t\t${2:blockofcode}\n{% endfilter %}$3'
 
     'Flask Set':
         'prefix': 'fset'
