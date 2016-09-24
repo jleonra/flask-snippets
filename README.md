@@ -52,6 +52,7 @@ Adds snippets to quickly build Jinja html templates and Flask python controls in
 * frc
 * fsc
 * feh
+* flog
 
 ## TODO:
 - Add syntax highlighting
