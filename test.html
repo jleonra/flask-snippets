@@ -1,3 +1,11 @@
-{% macro dsfds -%}
-    gdfg
-{%- endmacro %}
+{% filter filter %}
+    blockofcode
+{% endfilter %}
+
+{% import "template" as alias %}
+
+{{ self.block_name() }}
+
+{% set expression %}  {{ self.supper() }} {% autoescape true %}
+    blockofcode
+{% endautoescape %}
