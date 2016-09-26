@@ -1,3 +1,6 @@
+## 0.2.1 - Fixes
+* Style fixes on some snippets
+
 ## 0.2.0 - Flask control snippets
 * Better README.md
 * Cleaned templates.cson

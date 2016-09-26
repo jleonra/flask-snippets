@@ -38,7 +38,7 @@
 
     'URL Methods':
         'prefix': 'fmeth'
-        'body': "methods=['${1:GET}', '${2:POST}']$3"
+        'body': "methods=['GET', 'POST']$1"
 
     'Render Template':
         'prefix': 'frt'
