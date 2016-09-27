@@ -3,7 +3,7 @@
 '.text.html':
     'Flask Expresion':
         'prefix': 'fexp'
-        'body': '{{ ${1:foo.bar}$2 }}'
+        'body': '{{ ${1:foo.bar} }}$2'
 
     'Flask Filter':
         'prefix': 'ffilter'
