@@ -1,18 +1,27 @@
 # flask-snippets
 
-Adds snippets to quickly build Jinja html templates and Flask python controls in Atom.
 
+### Adds snippets to quickly build Jinja html templates and Flask python controls in Atom.
+
+***
 ## To install:
 > apm install flask-snippets
 
-## Work in progress
+## Python controls
+![Python Snippet](https://ibin.co/2waIulh067f4.gif)
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+
+
+## Jinja templates
+
+![Jinja Templates](https://ibin.co/2waLnfYDHVrc.gif)
+
+***
 
 ## Snippets
 #### All snippets start with the letter f
 
-####[Jinja Templates]( http://jinja.pocoo.org/docs/dev/templates/):
+### [Jinja Templates]( http://jinja.pocoo.org/docs/dev/templates/):
 * fexp
 * ffilter
 * ffb
@@ -54,8 +63,9 @@ Adds snippets to quickly build Jinja html templates and Flask python controls in
 * feh
 * flog
 
+***
+
 ## TODO:
 - Add more snippets for more specific cases (flashing, etc.)
-- Add pics of the package working
 - Add description to snippet's name in the readme file.
 - Review snippets for optimization
