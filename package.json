@@ -4,7 +4,7 @@
   "autor": {
     "name": "Juan Leon"
   },
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A collection of snippets for Python Flask Microframework.",
   "keywords": [
     "snippets",
