@@ -11,18 +11,14 @@
 
     'Flask Comment':
         'prefix': 'fcomment'
-        'body': '{# ${1:comment} #}'
-
-    'Flask Raw':
-        'prefix': 'fraw'
-        'body': '{% raw %}\n\t\t${1:blockofcode}\n{% endraw %}'
+        'body': '{# \n\t${1:comment} \n#}'
 
     'Flask Block':
         'prefix': 'fblock'
-        'body': '{% block ${1:name/id} %}$2{% endblock $1 %}$3'
+        'body': '{% ${1:block} ${2:foo} %}$3{% end${1:block} %}\n$4'
 
-    'Flask Child':
-        'prefix': 'fchild'
+    'Flask Extends':
+        'prefix': 'fextends'
         'body': '{% extends ${1:layout_template} %}\n\n$2'
 
     'Flask Self':
@@ -35,27 +31,23 @@
 
     'Flask For':
         'prefix': 'ffor'
-        'body': '{% for ${1:element} in ${2:collection} %}\n\t\t$3{{ ${1:element}|e }}$4\n{% endfor %}$5'
+        'body': '{% for ${1:element} in ${2:collection} %}\n\t\t$3{{ ${1:element}|e }}$4\n{% endfor %}\n$5'
 
     'Flask If':
         'prefix': 'fif'
-        'body': '{% if ${1:expression} %}\n\t\t${2:blockofcode}\n{% endif %}$3'
+        'body': '{% if ${1:expression} %}\n\t\t${2:blockofcode}\n{% endif %}\n$3'
 
     'Flask Ife':
         'prefix': 'fife'
-        'body': '{% if ${1:expression} %}\n\t\t${2:blockofcode}\n{% else %}\n\t\t${3:blockofcode}\n{% endif %}$4'
+        'body': '{% if ${1:expression} %}\n\t\t${2:blockofcode}\n{% else %}\n\t\t${3:blockofcode}\n{% endif %}\n$4'
 
     'Flask Elif':
         'prefix': 'felif'
-        'body': '{% if ${1:expression} %}\n\t\t${2:blockofcode}\n{% elif ${3:expression2} %}\n\t\t${4:blockofcode}\n{% else %}\n\t\t${5:blockofcode}\n{% endif %}$6'
+        'body': '{% if ${1:expression} %}\n\t\t${2:blockofcode}\n{% elif ${3:expression2} %}\n\t\t${4:blockofcode}\n{% else %}\n\t\t${5:blockofcode}\n{% endif %}\n$6'
 
     'Flask Macro':
         'prefix': 'fmacro'
         'body': '{% macro ${1:expression} -%}\n\t\t${2:blockofcode}\n{%- endmacro %}$3'
-
-    'Flask Call':
-        'prefix': 'fcall'
-        'body': '{% call ${1:expression} %}\n\t\t${2:blockofcode}\n{% endcall %}$3'
 
     'Flask Filter Block':
         'prefix': 'ffb'
@@ -65,25 +57,17 @@
         'prefix': 'fset'
         'body': '{% set ${1:expression} %}$2'
 
-    'Flask Set Block':
-        'prefix': 'fsb'
-        'body': '{% set ${1:expression} %}\n\t\t${2:blockofcode}\n{% endset %}$3'
-
     'Flask Include':
         'prefix': 'finclude'
         'body': '{% include "${1:template}" %}$2'
 
     'Flask Import':
         'prefix': 'fimport'
-        'body': '{% import "${1:template}" as ${2:alias} %}$3'
-
-    'Flask With':
-        'prefix': 'fwith'
-        'body': '{% with ${1:expression} %}\n\t\t${2:blockofcode}\n{% endwith %}$3'
+        'body': '{% import "${1:template}" as ${2:alias} %}\n$3'
 
     'Flask Autoescape':
         'prefix': 'fautoescape'
-        'body': '{% autoescape ${1:true} %}\n\t\t${2:blockofcode}\n{% endautoescape %}$3'
+        'body': '{% autoescape ${1:true} %}\n\t\t${2:blockofcode}\n{% endautoescape %}\n$3'
 
     'Flask url':
         'prefix': 'furl'

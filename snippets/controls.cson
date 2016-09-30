@@ -6,30 +6,31 @@
                 Keyword arguments:
                 ${2:argument} -- ${3:description}
                 Return: ${4:return_description}
-                \\"\\"\\"$5
+                \\"\\"\\"\n$5
                 """
 
     'SL docstring':
         'prefix': '""'
-        'body': '"""${1:sumary_line}"""$2'
+        'body': '"""${1:sumary_line}"""\n$2'
 
     'Flask App':
         'prefix': 'fapp'
-        'body': """from flask import Flask
+        'body': """from flask import Flask, render_template
                 app = Flask(__name__)
 
-                @app.route('${1:path}')
-                def ${2:func_name}(${3:foo}):
-                    return ${4:expression}
+
+                @app.route('${1:/}')
+                def ${2:index}():
+                    return render_template('${3:index}.html')
 
                 if __name__ == '__main__':
-                  app.run(${5:debug=True})$0 """
+                  app.run(host:'${4:127.0.0.1}', port=${5:8000}, debug=${6:True})\n$0 """
 
     'Flask Route':
         'prefix': 'froute'
         'body':"""@app.route('${1:path}')
         def ${2:func_name}(${3:foo}):
-            return ${4:expression}
+            return render_template('${4:expression}')
         """
 
     'URL Generator':
@@ -42,7 +43,7 @@
 
     'Render Template':
         'prefix': 'frt'
-        'body': "render_template('${1:page.html}', ${2:foo}=${3:bar})$4"
+        'body': "render_template('${1:page}.html', ${2:foo}=${3:bar})$4"
 
     'Test Request':
         'prefix': 'ftreq'
@@ -54,7 +55,7 @@
         def ${2:upload_file}():
             if request.method == 'POST':
                 ${3:f} = request.files['${4:the_file}']
-                ${3:f}.save('${6:/path/to/save/}${4:the_file}.${5:txt}')$7
+                ${3:f}.save('${6:/path/to/save/}${4:the_file}.${5:txt}')\n$7
         """
 
     'Secure Upload':

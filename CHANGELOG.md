@@ -1,3 +1,6 @@
+## 0.3.3 - Review
+* Snippet review and optimization
+
 ## 0.3.2 - README
 * Added images to readme
 

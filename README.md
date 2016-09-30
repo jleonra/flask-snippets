@@ -26,8 +26,7 @@
 * ffilter
 * ffb
 * fcomment
-* fblock
-* fraw
+* fblock  --> Generic block, useful for vanilla and extension template blocks
 * fchild
 * fself
 * fsuper
@@ -36,12 +35,9 @@
 * fife
 * felif
 * fmacro
-* fcall
 * fset
-* fsb
 * finclude
 * fimport
-* fwith
 * fautoescape
 * furl
 
@@ -49,7 +45,7 @@
 
 ### [Flask](http://flask.pocoo.org/docs/0.11/quickstart/):
 * "" (single line docstring)
-* """ (milti-line docstring)
+* """ (multi-line docstring)
 * fapp
 * froute
 * furl
